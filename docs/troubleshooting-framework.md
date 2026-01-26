@@ -1,4 +1,4 @@
-# Troubleshooting Framework (Fast + Documentable)
+# Troubleshooting Framework
 
 1. **Confirm Impact**
    - Who is affected? One user or many?
