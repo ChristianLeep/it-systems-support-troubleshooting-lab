@@ -42,7 +42,7 @@ Each case below includes full ticket documentation and visual proof.
 
 ###  TKT-001 — Wi-Fi Connected but No Internet (DNS Failure)
 **Skills:** Network diagnostics, command-line troubleshooting  
-📄 [View Case File](./tickets/TKT-001-wifi-dns-failure.md)
+📄 [View Case File](tickets/TKT-001-wifi-dns-failure.md)
 
 <p align="center">
   <img src="evidence/TKT-001/01-ipconfig.png" width="45%">
