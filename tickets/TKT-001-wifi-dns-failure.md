@@ -34,42 +34,42 @@ Opened Network Connections to review adapter settings.
 ### 2) Inspected IPv4 properties
 Confirmed DNS was manually configured with invalid servers.
 
-![Broken DNS Settings](../evidence/TKT-001/03_Broken DNS Configs.png)
+![Broken DNS Settings](../evidence/TKT-001/03_broken_dns_configs.png)
 
 ---
 
 ### 3) Attempted web access
 Browser unable to load Google; DNS error displayed.
 
-![Browser DNS Failure](../evidence/TKT-001/04_Can't Access the Internet.png)
+![Browser DNS Failure](../evidence/TKT-001/04_cant_access_the_internet.png)
 
 ---
 
 ### Tested basic connectivity
 Result: Successful replies confirmed internet routing is functional.
 
-![Ping 8.8.8.8](../evidence/TKT-001/05_Ping 8.8.8.8.png)
+![Ping 8.8.8.8](../evidence/TKT-001/05_ping_8_8_8_8.png)
 
 ---
 
 ### Tested name resolution
 Result: Host not found.
 
-![Ping google.com Failure](../evidence/TKT-001/06_Ping google.com.png)
+![Ping google.com Failure](../evidence/TKT-001/06_ping_google_com.png)
 
 ---
 
 ### Confirmed DNS failure
 Result: DNS request timed out.
 
-![Nslookup Failure](../evidence/TKT-001/07_Nslookup google.com.png)
+![Nslookup Failure](../evidence/TKT-001/07_nslookup_google_com.png)
 
 ---
 
 ### Reviewed full network configuration
 Confirmed incorrect DNS servers were configured.
 
-![IPConfig Output](../evidence/TKT-001/08_ipconfig all.png)
+![IPConfig Output](../evidence/TKT-001/08_ipconfig_all.png)
 
 ---
 
@@ -86,11 +86,11 @@ The system’s IPv4 DNS servers were manually configured with invalid addresses 
    - 1.1.1.1 (Cloudflare DNS)
 3. Flushed DNS cache:
 
-![Flushed DNS Cache](../evidence/TKT-001/09_ipconfig flushdns.png)
+![Flushed DNS Cache](../evidence/TKT-001/09_ipconfig_flushdns.png)
 
 4. Renewed DHCP lease:
 
-![DHCP Renew](../evidence/TKT-001/10_ipconfig release-renew.png)
+![DHCP Renew](../evidence/TKT-001/10_ipconfig_release_renew.png)
 
 ---
 
