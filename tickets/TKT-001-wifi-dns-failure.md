@@ -27,7 +27,7 @@ User reports they are connected to the network, but websites will not load. The 
 ### 1) Verified adapter configuration
 Opened Network Connections to review adapter settings.
 
-![Open Network Connections](../evidence/TKT-001/01_Open internet properties_ncpa.cpl.png)
+![Open Network Connections](../evidence/TKT-001/01_open_internet_properties.png)
 
 ---
 
