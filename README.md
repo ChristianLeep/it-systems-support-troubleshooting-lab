@@ -56,8 +56,8 @@ Each case below includes full ticket documentation and visual proof.
 📄 [View Case File](tickets/TKT-002-onedrive-sync-stuck.md)
 
 <p align="center">
-  <img src="evidence/TKT-002/01-onedrive-paused.png" width="45%">
-  <img src="evidence/TKT-002/02-sync-restored.png" width="45%">
+  <img src="evidence/TKT-002/02_onedrive_sync_paused.png" width="45%">
+  <img src="evidence/TKT-002/07_verify_onedrive_sync_on_new_computer.png" width="45%">
 </p>
 
 ---
