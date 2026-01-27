@@ -113,7 +113,7 @@ Result: ping google.com and nslookup google.com showed successful configuration 
 ### 5) Verified Connectivity:
 Result: Web pages pulled successfully.
 
-![Confirmed Solution](../evidence/TKT-001/11_confirm_solution.png)|
+![Confirmed Solution](../evidence/TKT-001/11_confirm_solution.png)
 
 ---
 
