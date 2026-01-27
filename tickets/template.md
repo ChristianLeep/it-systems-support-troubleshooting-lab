@@ -1,23 +1,30 @@
 # TKT-XXX - <Short Title>
 
-## Environment
-- Device: (Host/VM, Windows/Mac, model if applicable)
-- Location: (Simulated Classroom / Office / Remote)
-- User Type: (Faculty/Staff/Student)
-- Urgency: (Class starts in 5 min / meeting live / routine)
+## User intake form
+- Who: [Users First & Last Name / Email]
+- What: [Description of problem to include device affected (model, mac address/ip address/serial # if applicable)]
+- When: [When did the user notice the issue/how long have they been experiencing an issue]
+- Where [Campus/Room #]
+- Why: [Reason User is submitting a ticket]
+- How: [If known - How did the issue occur]
+- Urgency: [Insert urgency classification]
 
-## Problem Statement (User Language)
-<What the user says>
+## IT input/verification
+- Who: [Users First & Last Name / Email]
+- What: [Description of problem to include device affected (model, mac address/ip address/serial # if applicable)]
+- When: [When did the user notice the issue/how long have they been experiencing an issue]
+- Where [Campus/Room #]
+- Why: [Reason User is submitting a ticket]
+- How: [If known - How did the issue occur]
+- Urgency: [Insert urgency classification]
 
 ## Initial Assessment
 - Scope:
 - Recent changes:
 - Expected behavior:
 
-## Troubleshooting Timeline (Minute-by-Minute)
-- 00:00 -
-- 00:02 -
-- 00:05 -
+## Troubleshooting Timeline 
+- Troubleshooting Process
 
 ## Diagnostics Collected
 - Commands run:
