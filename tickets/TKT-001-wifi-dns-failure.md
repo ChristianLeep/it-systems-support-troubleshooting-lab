@@ -1,112 +1,124 @@
 # TKT-001 – Connected to Network but No Internet (DNS Failure)
 
-## Environment
-- Device: Windows 11 Virtual Machine (VirtualBox)
-- Network Mode: Bridged Adapter
-- User Type: Faculty Laptop (Simulated)
-- Location: Remote/Home Network
-- Urgency: User unable to access websites before virtual meeting
+## User intake form
+- Who: Dr. Sarah Mitchell / sarah.mitchell@university.edu
+- What: Laptop connected to the network but unable to access websites.
+- When: Issue noticed immediately before a scheduled virtual meeting (approx. 20 minutes prior to ticket submission)
+- Where: Remote faculty office
+- Why: Unable to access materials and web resources required for work
+- How: Unknown
+- Urgency: High 
 
 ---
 
-## Problem Statement (User Description)
-User reports they are connected to the network, but websites will not load. The system shows network connectivity, but browsers display DNS errors.
+## IT input/verification
+- Who: Dr. Sarah Mitchell / sarah.mitchell@university.edu
+- What: Confirmed device has valid IP address but cannot resolve domain names. Connectivity to external IPs is functional.
+- When: Verified immediately after ticket intake
+- Where: Remote user device
+- Why: DNS resolution failure preventing web access
+- How: Suspected misconfigured DNS settings
+- Urgency: High
 
 ---
 
 ## Initial Assessment
 - Scope: Single endpoint affected
-- Network Status: Connected to LAN
-- Symptom Type: Internet reachable by IP, but domain names fail
-- Initial Hypothesis: DNS resolution failure
+- Recent changes: None mentioned 
+- Hypothesis: DNS resolution failure / possible network configuration errors
 
 ---
 
 ## Troubleshooting Timeline
 
-### 1) Verified adapter configuration
-Opened Network Connections to review adapter settings.
+### 1) Replicated user issue
+Opened the web browser to verify connectivity issues.
 
-![Open Network Connections](../evidence/TKT-001/01_open_internet_properties.png)
-
----
-
-### 2) Inspected IPv4 properties
-Confirmed DNS was manually configured with invalid servers.
-
-![Broken DNS Settings](../evidence/TKT-001/03_broken_dns_configs.png)
+![Replicated user issue](../evidence/TKT-001/01_cant_access_the_internet.png)
 
 ---
 
-### 3) Attempted web access
-Browser unable to load Google; DNS error displayed.
+### 2) Tested basic connectivity
+Result: ping 8.8.8.8 showed successful replies, confirming internet routing is functional.
 
-![Browser DNS Failure](../evidence/TKT-001/04_cant_access_the_internet.png)
-
----
-
-### Tested basic connectivity
-Result: Successful replies confirmed internet routing is functional.
-
-![Ping 8.8.8.8](../evidence/TKT-001/05_ping_8_8_8_8.png)
+![Ping 8.8.8.8](../evidence/TKT-001/02_ping_8_8_8_8.png)
 
 ---
 
-### Tested name resolution
-Result: Host not found.
+### 3) Tested name resolution
+Result: ping google.com returned a host not found error.
 
-![Ping google.com Failure](../evidence/TKT-001/06_ping_google_com.png)
-
----
-
-### Confirmed DNS failure
-Result: DNS request timed out.
-
-![Nslookup Failure](../evidence/TKT-001/07_nslookup_google_com.png)
+![Ping google.com Failure](../evidence/TKT-001/03_ping_google_com.png)
 
 ---
 
-### Reviewed full network configuration
-Confirmed incorrect DNS servers were configured.
+### 4) Confirmed DNS failure
+Result: nslookup google.com returned a DNS request timeout.
+Noticed: Invalid DNS address of 203.0.113.1
 
-![IPConfig Output](../evidence/TKT-001/08_ipconfig_all.png)
+![Nslookup Failure](../evidence/TKT-001/04_nslookup_google_com.png)
+
+---
+
+### 5) Reviewed full network configuration
+Result: ipconfig /all showed full Windows IP and network adapter configurations.
+Confirmed: Incorrect DNS servers were configured (203.0.113.1 & 198.51.100.1).
+
+![IPConfig Output](../evidence/TKT-001/05_ipconfig_all.png)
+
+---
+
+### 6) Inspected IPv4 properties
+Result: cmd+r > ncpa.cpl > Ethernet Properties > Ipv4 Properties showed misconfigurations.
+Confirmed: DNS was manually configured with invalid servers.
+
+![Broken DNS Settings](../evidence/TKT-001/06_broken_dns_configs.png)
 
 ---
 
 ## Root Cause
-The system’s IPv4 DNS servers were manually configured with invalid addresses (`1.2.3.4` and `5.6.7.8`), preventing domain name resolution. Internet routing remained functional, but DNS queries could not be resolved.
+The system’s IPv4 DNS servers were manually configured with invalid addresses (`203.0.113.1` and `198.51.100.1`), preventing domain name resolution. Internet routing remained functional, but DNS queries could not be resolved.
 
 ---
 
 ## Resolution Steps
 
-1. Opened IPv4 properties for the network adapter
-2. Reconfigured DNS servers to valid public resolvers:
-   - 8.8.8.8 (Google DNS)
-   - 1.1.1.1 (Cloudflare DNS)
-3. Flushed DNS cache:
+### 1) Reconfigured DNS servers
+Changed the DNS servers to valid public resolvers: (`8.8.8.8`) (Google DNS) and (`1.1.1.1`) (Cloudflare DNS).
 
-![Flushed DNS Cache](../evidence/TKT-001/09_ipconfig_flushdns.png)
-
-4. Renewed DHCP lease:
-
-![DHCP Renew](../evidence/TKT-001/10_ipconfig_release_renew.png)
+![Reconfigured DNS servers](../evidence/TKT-001/07_fixed_dns_server.png)
 
 ---
 
-## Verification
+### 2) Flushed DNS cache:
+Result: ipconfig /flushdns cleared the local stored DNS cache.
 
-| Test | Result |
-|------|--------|
-| `ping 8.8.8.8` | Successful |
-| `ping google.com` | Successful |
-| `nslookup google.com` | Returned valid IP |
-| Browser test | Websites load normally |
+![Flushed DNS Cache](../evidence/TKT-001/08_ipconfig_flushdns.png)
+
+---
+
+### 3) Renewed DHCP lease:
+
+![DHCP Renew](../evidence/TKT-001/09_ipconfig_release_renew.png)
+
+---
+
+### 4) Verified changes were made:
+Result: ping google.com and nslookup google.com showed successful configuration changes. 
+
+![Verified changes](../evidence/TKT-001/10_ping_google_com_nslookup_google_com.png)
+
+---
+
+### 5) Verified Connectivity:
+Result: Web pages pulled successfully.
+
+![Confirmed Solution](../evidence/TKT-001/11_confirm_solution.png)|
 
 ---
 
 ## Prevention / Best Practice
-- Avoid manually setting DNS unless required
+- Check manual DNS settings if applicable. Recommend obtaining the DNS server address automatically.
 - Always verify DNS entries when connectivity issues affect web access
 - Use `ipconfig /all` to confirm active DNS servers
 
