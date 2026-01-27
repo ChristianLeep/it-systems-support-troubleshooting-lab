@@ -45,8 +45,8 @@ Each case below includes full ticket documentation and visual proof.
 📄 [View Case File](tickets/TKT-001-wifi-dns-failure.md)
 
 <p align="center">
-  <img src="evidence/TKT-001/01-ipconfig.png" width="45%">
-  <img src="evidence/TKT-001/02-nslookup-fail.png" width="45%">
+  <img src="evidence/TKT-001/01_cant_access_the_internet.png" width="45%">
+  <img src="evidence/TKT-001/05_ipconfig_all.png" width="45%">
 </p>
 
 ---
