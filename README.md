@@ -73,7 +73,7 @@ Each case below includes full ticket documentation and visual proof.
 
 ---
 
-###  TKT-004 — Zoom Meeting Has No Microphone Audio
+###  TKT-004 — Teams Meeting Has No Microphone Audio
 **Skills:** Conferencing platforms, OS permissions, audio routing  
 📄 [View Case File](tickets/TKT-004-zoom-no-audio.md)
 
