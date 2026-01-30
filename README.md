@@ -67,8 +67,8 @@ Each case below includes full ticket documentation and visual proof.
 📄 [View Case File](tickets/TKT-003-display-no-signal.md)
 
 <p align="center">
-  <img src="evidence/TKT-003/01-no-signal.jpg" width="45%">
-  <img src="evidence/TKT-003/02-display-settings.png" width="45%">
+  <img src="evidence/TKT-003/01_no_signal.png" width="45%">
+  <img src="evidence/TKT-003/04_display_extended.png" width="45%">
 </p>
 
 ---
