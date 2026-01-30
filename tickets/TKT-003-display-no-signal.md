@@ -32,66 +32,37 @@
 ## Troubleshooting Timeline
 
 ### 1) Replicated the issue  
-Connected instructor laptop to classroom HDMI cable and confirmed display showed "No Signal".
+Verified HDMI connections on the instructor's laptop to the projector and confirmed HDMI input source. Still displayed "No Signal".
 
-![No Signal Display](../evidence/TKT-003/01_no_signal_display.png)
-
----
-
-### 2) Checked physical connections  
-Verified HDMI cable was securely connected to laptop adapter and wall plate.
-
-![Checked HDMI Connection](../evidence/TKT-003/02_hdmi_connection.png)
+![No Signal Display](../evidence/TKT-003/01_no_signal.png)
 
 ---
 
-### 3) Verified projector input source  
-Confirmed projector was set to the correct HDMI input.
-
-![Projector Input Source](../evidence/TKT-003/03_projector_input.png)
-
----
-
-### 4) Checked laptop display settings  
+### 2) Checked laptop display settings  
 Opened Windows display settings and confirmed system was not duplicating or extending display.
 
-![Display Settings](../evidence/TKT-003/04_display_settings.png)
-
----
-
-### 5) Changed display mode  
-Used keyboard shortcut `Windows + P` and selected **Duplicate** display.
-
-![Windows P Menu](../evidence/TKT-003/05_windows_p_duplicate.png)
-
----
-
-### 6) Confirmed signal restored  
-Classroom display began showing laptop screen successfully.
-
-![Display Restored](../evidence/TKT-003/06_display_restored.png)
+![Display Settings](../evidence/TKT-003/02_detect_other_display_fail.png)
 
 ---
 
 ## Root Cause
-The instructor’s laptop was not set to duplicate or extend its display to the external monitor. As a result, the classroom projector did not receive a video signal, displaying "No Signal."
+The instructor’s laptop was not set to extend its display to the external screen. As a result, the classroom projector did not receive a video signal, displaying "No Signal."
 
 ---
 
 ## Resolution Steps
-1. Verified HDMI cable and adapter connections  
-2. Confirmed projector input source was correct  
-3. Adjusted laptop display settings using `Windows + P`  
-4. Selected **Duplicate Display** mode
+
+### 1) Changed display mode  
+Changed display mode to **extend** display.
+
+![Changed display](../evidence/TKT-003/03_extend_displays.png)
 
 ---
 
-## Verification
-- Test performed:
-  - Display output mirrored to projector
-  - Presentation slides visible on classroom screen
-- Result:
-  - Instructor successfully presented lecture materials
+### 2) Confirmed signal restored  
+Classroom display began showing laptop screen successfully.
+
+![Display Restored](../evidence/TKT-003/04_display_extended.png)
 
 ---
 
