@@ -34,43 +34,49 @@
 ### 1) Replicated the issue  
 Joined the active Teams meeting and confirmed microphone showed no activity when speaking.
 
-![Mic not working](../evidence/TKT-004/01.png)
+![Mic not working](../evidence/TKT-004/01_no_audio.png)
 
 ---
 
 ### 2) Checked Teams audio settings 
-Opened Windows display settings and confirmed system was not duplicating or extending display.
+Opened Teams settings and observed incorrect microphone device selected.
 
-![Checked teams settings](../evidence/TKT-004/02.png)
+![Checked teams settings](../evidence/TKT-004/02_teams_sound_settings.png)
 
 ---
 
 ### 3) Verified OS microphone settings
-Opened Windows Sound Settings and confirmed laptop was using internal microphone instead of USB headset.
+Opened Windows Sound Settings and confirmed laptop was using incorrect microphone.
+
+![Checked windows settings](../evidence/TKT-004/03_system_sound_settings.png)
 
 ---
 
-### 4) Tested microphone input
-Spoke into USB headseat mic and confirmed input levels responded once correct device selected. 
-
 ## Root Cause
-Teams was configured to use the incorrect microphone device. The instructor had connect a USB headset, but Teams and Windows were still set to the laptop's internhal microphone, which was muted or not picking up sound.
+Teams was configured to use the incorrect microphone device. The instructor had connected a USB headset, but Teams and Windows was set to another input device, which was muted or not picking up sound.
 
 ---
 
 ## Resolution Steps
 
 ### 1) Selected correct microphone in Teams 
-Set USB headset as defailt input device in Windows Sound Settings.
+Set the USB headset as the default input device in Teams sound settings.
 
-![Teams Mic](../evidence/TKT-004/03_.png)
+![Teams Mic](../evidence/TKT-004/04_correct_teams_mic.png)
 
 ---
 
-### 2) Verified Windows input device 
+### 2) Selected correct microphone in Windows Sound Settings
 Set USB headseat as default input device in Windows Sound Settings.
 
-![Verified Input](../evidence/TKT-004/04_.png)
+![Windows Mic](../evidence/TKT-004/05_correct_system_settings.png)
+
+---
+
+### 3) Tested microphone input
+Spoke into USB headseat mic and confirmed input levels responded once correct device selected. 
+
+![Tested Input](../evidence/TKT-004/06_resolved.jpg)
 
 ---
 
