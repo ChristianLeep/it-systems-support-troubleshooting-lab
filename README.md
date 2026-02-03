@@ -27,7 +27,7 @@ This lab reflects the responsibilities of an **IT Systems Support Professional**
 
 | Area | Hands-On Proof Included |
 |------|------------------------|
-|  Windows & macOS Support | Outlook, OneDrive, device settings, user-side diagnostics |
+|  Windows Support | Outlook, OneDrive, device settings, user-side diagnostics |
 |  Network Troubleshooting | DNS failure, IP diagnostics, connectivity testing |
 |  Classroom AV Support | “No signal” display, audio routing, cable/input testing |
 |  Zoom / Teams Support | Mic issues, permissions, device selection |
