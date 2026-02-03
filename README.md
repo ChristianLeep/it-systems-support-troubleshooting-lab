@@ -78,8 +78,8 @@ Each case below includes full ticket documentation and visual proof.
 📄 [View Case File](tickets/TKT-004-teams-no-audio.md)
 
 <p align="center">
-  <img src="evidence/TKT-004/01-zoom-audio-settings.png" width="45%">
-  <img src="evidence/TKT-004/02-mic-permissions.png" width="45%">
+  <img src="evidence/TKT-004/01_no_audio.png" width="45%">
+  <img src="evidence/TKT-004/06_resolved.jpg" width="45%">
 </p>
 
 ---
