@@ -138,9 +138,9 @@ Demonstrates understanding of **when to resolve locally vs escalate** to network
 
 | Component | Description |
 |-----------|------------|
-| Host System | Windows / macOS laptop |
+| Host System | Windows PC |
 | Virtualization | VirtualBox Windows VM |
-| Conferencing Tools | Zoom, Microsoft Teams |
+| Conferencing Tools | Microsoft Teams |
 | Productivity Suite | Microsoft 365 |
 | Network Testing | IP/DNS diagnostics via CLI |
 
