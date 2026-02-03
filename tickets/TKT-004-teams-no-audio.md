@@ -1,7 +1,7 @@
 # TKT-004 – Teams Meeting Has No Microphone Audio
 
 ## User intake form
-- Who: Dr. Michael Torres / michael.torres@university.edu
+- Who: Prof. Daniel Rivera / daniel.rivera@university.edu
 - What: Joined a Teams meeting, but participants reported they could not hear me. 
 - When: Issue noticed at the start of a scheduled virtual class session
 - Where: Health Sciences Campus – Room 3C-221
@@ -12,7 +12,7 @@
 ---
 
 ## IT input/verification
-- Who: Dr. Michael Torres / michael.torres@university.edu
+- Who: Prof. Daniel Rivera / daniel.rivera@university.edu
 - What: Confirmed Teams meeting was active, but no audio was being transmitted from the instructor's laptop microphone.
 - When: Verified immediately upon arrival to classroom
 - Where: Health Sciences Campus – Room 3C-221
