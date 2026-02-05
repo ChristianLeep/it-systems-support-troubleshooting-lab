@@ -90,7 +90,7 @@ Each case below includes full ticket documentation and visual proof.
 
 <p align="center">
   <img src="evidence/TKT-005/01_error_message.png" width="45%">
-  <img src="evidence/TKT-005/02_sucess.png" width="45%">
+  <img src="evidence/TKT-005/06_sucess.png" width="45%">
 </p>
 
 ---
