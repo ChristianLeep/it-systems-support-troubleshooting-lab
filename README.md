@@ -86,7 +86,7 @@ Each case below includes full ticket documentation and visual proof.
 
 ###  TKT-005 — Outlook Fails to Load Mailbox
 **Skills:** Office troubleshooting, config repair
-📄 [View Case File](tickets/TKT-005-outlook-profile-corruption.md)
+📄 [View Case File](tickets/TKT-005-outlook-corruption.md)
 
 <p align="center">
   <img src="evidence/TKT-005/01_error_message.png" width="45%">
