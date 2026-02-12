@@ -31,7 +31,6 @@ This lab reflects the responsibilities of an **IT Systems Support Professional**
 |  Network Troubleshooting | DNS failure, IP diagnostics, connectivity testing |
 |  Classroom AV Support | “No signal” display, audio routing, cable/input testing |
 |  Zoom / Teams Support | Mic issues, permissions, device selection |
-|  Peripheral Support | Printer spooler recovery |
 |  IT Service Management | Ticket documentation, timelines, escalation logic |
 
 ---
