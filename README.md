@@ -95,17 +95,6 @@ Each case below includes full ticket documentation and visual proof.
 
 ---
 
-###  TKT-006 — Printer Jobs Stuck in Queue
-**Skills:** Windows services, spooler reset, user-side printer support  
-📄 [View Case File](tickets/TKT-006-printer-spooler-stuck.md)
-
-<p align="center">
-  <img src="evidence/TKT-006/01-print-queue-stuck.png" width="45%">
-  <img src="evidence/TKT-006/02-spooler-restart.png" width="45%">
-</p>
-
----
-
 ##  Rapid Response Checklists
 
 Designed for **time-sensitive classroom and meeting support**.
