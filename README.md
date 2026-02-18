@@ -104,7 +104,6 @@ Designed for **time-sensitive classroom and meeting support**.
 |-----------|---------|
 |  [Classroom AV Rapid Response](docs/checklists/classroom-av-rapid-response.md) | Fix display/audio issues in under 3 minutes |
 |  [Network Triage](docs/checklists/network-triage.md) | Quickly isolate DNS vs gateway vs device issues |
-|  [Zoom / Teams Triage](docs/checklists/zoom-teams-triage.md) | Fast conferencing troubleshooting |
 
 ---
 
