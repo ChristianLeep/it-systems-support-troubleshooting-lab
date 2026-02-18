@@ -1,14 +1,14 @@
-# 🌐 Network Quick Self-Check Guide
+# Network Quick Self-Check Guide
 ### Before Contacting the Help Desk
 
 If you are connected to Wi-Fi or Ethernet but cannot access the internet, try these quick checks first.  
-This guide is meant to rule out simple issues — not to replace IT support.
+This guide is meant to rule out simple issues.
 
 Most checks take under **2 minutes**.
 
 ---
 
-# ✅ 1️⃣ Check Your Connection
+# 1️⃣ Check Your Connection
 
 ### If Using Wi-Fi:
 - Make sure you are connected to the correct network.
@@ -22,7 +22,7 @@ Most checks take under **2 minutes**.
 
 ---
 
-# 🔄 2️⃣ Try Another Website
+# 2️⃣ Try Another Website
 
 If one website will not load:
 
@@ -31,7 +31,7 @@ If one website will not load:
 
 ---
 
-# 🔁 3️⃣ Turn Wi-Fi Off and Back On
+# 3️⃣ Turn Wi-Fi Off and Back On
 
 1. Click the network icon in the bottom-right corner.
 2. Turn Wi-Fi off.
@@ -41,7 +41,7 @@ If one website will not load:
 
 ---
 
-# 🔌 4️⃣ Disconnect and Reconnect (Wired)
+# 4️⃣ Disconnect and Reconnect (Wired)
 
 If using Ethernet:
 - Unplug the cable.
@@ -51,7 +51,7 @@ If using Ethernet:
 
 ---
 
-# 🔄 5️⃣ Restart Your Computer
+# 5️⃣ Restart Your Computer
 
 Many temporary network issues resolve after a full restart.
 
@@ -61,7 +61,7 @@ Many temporary network issues resolve after a full restart.
 
 ---
 
-# 📶 6️⃣ Check If Others Have the Same Issue
+# 6️⃣ Check If Others Have the Same Issue
 
 Ask someone nearby:
 - Are they able to access the internet?
@@ -71,7 +71,7 @@ This helps determine whether the issue is device-related or location-related.
 
 ---
 
-# 🚨 Contact Help Desk If:
+# Contact Help Desk If:
 
 - You cannot connect to Wi-Fi at all.
 - Multiple websites will not load.
@@ -85,7 +85,7 @@ When contacting IT, please provide:
 
 ---
 
-# 🧠 Why This Guide Exists
+# Why This Guide Exists
 
 This checklist helps identify:
 - Loose cables
