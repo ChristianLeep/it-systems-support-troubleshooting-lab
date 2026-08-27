@@ -44,21 +44,34 @@ function Write-Log {
 function Get-NetworkDriveMapping {
     param([Parameter(Mandatory)][string]$Letter)
 
-    try {
-        $network = New-Object -ComObject WScript.Network
-        $drives  = $network.EnumNetworkDrives()
+    # Map the drive
+try {
+    Write-Log "Attempting to map $DriveLetter to $NetworkPath..."
 
-        for ($i = 0; $i -lt $drives.Count(); $i += 2) {
-            if ($drives.Item($i) -ieq $Letter) {
-                return [string]$drives.Item($i + 1)
-            }
-        }
-    }
-    catch {
-        Write-Log "WARNING: Unable to enumerate current network mappings: $($_.Exception.Message)"
-    }
+    $network = New-Object -ComObject WScript.Network
+    $network.MapNetworkDrive($DriveLetter, $NetworkPath, $true)
 
-    return $null
+    Start-Sleep -Seconds 2
+
+    # Verify the mapping using NET USE
+    $mapping = cmd.exe /c "net use $DriveLetter" 2>&1
+
+    if ($mapping -match [regex]::Escape($NetworkPath)) {
+        Write-Log "SUCCESS: $DriveLetter is mapped to $NetworkPath."
+        Write-Log "--- Drive Mapping Finished (SUCCESS) ---"
+        exit 0
+    }
+    else {
+        Write-Log "ERROR: Mapping command completed, but verification failed."
+        Write-Log "NET USE returned: $($mapping -join ' ')"
+        Write-Log "--- Drive Mapping Finished (FAILED) ---"
+        exit 1
+    }
+}
+catch {
+    Write-Log "ERROR: Failed to map $DriveLetter to $NetworkPath. $($_.Exception.Message)"
+    Write-Log "--- Drive Mapping Finished (FAILED) ---"
+    exit 1
 }
 
 Write-Log '--- Drive Mapping Started ---'
